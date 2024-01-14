@@ -19,6 +19,9 @@ public class Main {
     private static int[] bubbleSort(int[] array) {
         boolean sorted = false;
 
+//        В этом контексте, код внутри цикла будет выполняться до тех пор, пока переменная sorted не станет true.
+//        Как только sorted станет true, выполнение цикла прекратится, и управление передастся дальше по программе.
+
         while (!sorted) {
             sorted = true;
 

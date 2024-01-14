@@ -38,15 +38,15 @@ public class Main {
 *   что является меньшим набором чисел, чем все числа от 2 до 100. Проверка всех чисел от 2 до 100 заняла бы больше времени и ресурсов.
 */
 
-    private static boolean isPrime(int number,List<Integer> primes) {
+    private static boolean isPrime(int number, List<Integer> primes) {
         /*
         * По теореме о делителях, если число number не является простым,
         * то у него должен быть делитель, который меньше или равен его квадратному корню.
         */
         double sqrt = sqrt(number);
 
-        for (int n:primes){
-            if (n > sqrt){
+        for (int n:primes) {
+            if (n > sqrt) {
                 return true;
             }
             if (number % n  == 0) {
